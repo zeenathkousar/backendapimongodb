@@ -14,12 +14,12 @@ connectDB();
 
 app.use('/api/user',userRouter);
 
+const port=process.env.PORT;
 
 
 
 
-
-app.listen(4000,()=>{
+app.listen(port,()=>{
     console.log('server started at 4000 port')
 })
 
